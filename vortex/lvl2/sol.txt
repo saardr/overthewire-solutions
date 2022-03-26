@@ -1,0 +1,3 @@
+after some expermintation on my on linux machine
+the trick is to pass 2 files, one of them being vortex3 pass
+then unpack the file using "/tmp/ownership.\$\$.tar" and we win.

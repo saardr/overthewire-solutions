@@ -1,0 +1,19 @@
+ssh behemoth{lvl_number}@behemoth.labs.overthewire.org -p 2221
+scp -P2221 behemoth{lvl_number}@behemoth.labs.overthewire.org:/path/to/file local/path // copy from remote to local
+
+If you are playing "somegame", then:
+
+    * USERNAMES are somegame0, somegame1, ...
+    * Most LEVELS are stored in /somegame/.
+    * PASSWORDS for each level are stored in /etc/somegame_pass/.
+
+lvl0:behemoth0
+lvl1:aesebootiv
+lvl2:eimahquuof
+lvl3:nieteidiel
+lvl4:ietheishei # fucking horrendous. every single fucking thing refused to work properly. 
+lvl5:aizeeshing
+lvl6:mayiroeche
+lvl7:baquoxuafo
+lvl8:pheewij7Ae
+

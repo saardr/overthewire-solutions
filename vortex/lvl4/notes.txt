@@ -1,0 +1,7 @@
+we can call execv("vortex4", args)
+with args = { NULL, ?, ?, exp };
+that way argc = 0
+but argv[3] is well defined and in our control
+other than that it is a simple format string exploit
+simply overwrite exit@.got.plt
+we can do it as if the machine has ASLR, but that seems unnecessary

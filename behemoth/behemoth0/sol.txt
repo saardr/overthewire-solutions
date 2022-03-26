@@ -1,0 +1,1 @@
+either by reversing or debugging it is easy to tell the password is "eatmyshorts"
