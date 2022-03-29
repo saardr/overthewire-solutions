@@ -1,0 +1,2 @@
+its a system() $PATH exploit, create a file name "touch" with
+chmod 777 that does cat /etc/behemoth_pass/behemoth3
